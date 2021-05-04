@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1- transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -7,17 +7,16 @@
       //<![CDATA[
       var num = 1;
       var t = "<table border='1'>"; // 테이블 시작 태그
-      for (var i = 1; i <= 4; i++) {
+      for (var i = 1; i <= 5; i++) {
         t += "<tr>";
-        for (var k = 1; k <= 3; k++) {
+        for (var k = 1; k <= 5; k++) {
           t += "<td>" + num + "</td>";
           num++;
         }
         t += "</tr>";
       }
-
       t += "</table>"; // 테이블 종료 태그
-      //console.log(t);
+      console.log(t);
       document.write(t); //테이블 태그를 문서에 출력합니다.
       //]]>
     </script>

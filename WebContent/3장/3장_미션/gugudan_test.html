@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>구구단</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <center>
+      <h1>구구단</h1>
+    </center>
+    <table border="1" align="center" width="800" height="280">
+      <tr>
+        <script language="javascript">
+          t = "";
+          for (var i = 2; i <= 9; i++) {
+            t += "<th>" + i + "단</th>";
+          }
+          t += "</tr>";
+          t += "<tr>";
+          for (var i = 2; i <= 9; i++) {
+            t += "<td>";
+            for (var j = 1; j <= 9; j++) {
+              t += i + "*" + j + "=" + i * j + "<br/>";
+            }
+            t += "</td>";
+          }
+
+          document.write(t);
+        </script>
+      </tr>
+    </table>
+  </body>
+</html>
