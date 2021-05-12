@@ -1,32 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<items>
-  <item id="1" name="·¹¸ó">
-    <price>3000</price>
-    <description> ·¹¸ó¿¡ Æ÷ÇÔµÇ¾î ÀÖ´Â Äí¿£»êÀº ÇÇ·ÎÈ¸º¹¿¡ ÁÁ´Ù. ºñÅ¸¹ÎCµµ Ç³ºÎÇÏ´Ù. </description>
-   </item>
-   
-   <item id="2" name="Å°À§">
-    <price>2000</price>
-    <description> ºñÅ¸¹ÎC°¡ ¸Å¿ì Ç³ºÎÇÏ´Ù. ´ÙÀÌ¿¡Æ®¿Í ¹Ì¿ë¿¡µµ ¸Å¿ì ÁÁ´Ù. </description>
-   </item>
-   
-    <item id="3" name="ºí·çº£¸®">
-    <price>5000</price>
-    <description> ºí·çº£¸®¿¡ Æ÷ÇÔµÈ anthocyanin(¾ÈÅä½Ã¾Æ´Ñ)Àº ´«ÇÇ·Î¿¡ È¿°ú°¡ ÀÖ´Ù. </description>
-   </item>  
-  
-   <item id="4" name="Ã¼¸®">
-    <price>5000</price>
-    <description> Ã¼¸®´Â ¸ÀÀÌ ´Ü ¼ººÐÀÌ ¸¹°í ÇÇ·ÎÈ¸º¹¿¡ Àß µè´Â´Ù. </description>
-   </item>  
-  
-   <item id="5" name="¸Þ·Ð">
-    <price>5000</price>
-    <description> ¸Þ·Ð¿¡´Â ºñÅ¸¹ÎA¿Í Ä®·ýÀÌ ¸¹ÀÌ Æ÷ÇÔµÇ¾î ÀÖ´Ù. </description>
-   </item>  
-  
-   <item id="6" name="¼ö¹Ú">
-    <price>15000</price>
-    <description> ¼öºÐÀÌ Ç³ºÎÇÑ °úÀÏÀÌ´Ù.</description>
-   </item>
-</items> 
+[
+  {
+    "id": "1",
+    "name": "ë ˆëª¬",
+    "price": " 3000",
+    "description": "ë ˆëª¬ì— í¬í•¨ë˜ì–´ ìžˆëŠ” ì¿ ì—”ì‚°ì€ í”¼ë¡œíšŒë³µì— ì¢‹ë‹¤. ë¹„íƒ€ë¯¼Cë„ í’ë¶€í•˜ë‹¤."
+  },
+  {
+    "id": "2",
+    "name": "í‚¤ìœ„",
+    "price": " 2000",
+    "description": "ë¹„íƒ€ë¯¼Cê°€ ë§¤ìš° í’ë¶€í•˜ë‹¤. ë‹¤ì´ì—íŠ¸ì™€ ë¯¸ìš©ì—ë„ ë§¤ìš° ì¢‹ë‹¤."
+  },
+  {
+    "id": "3",
+    "name": "ë¸”ë£¨ë² ë¦¬",
+    "price": " 5000",
+    "description": "ë¸”ë£¨ë² ë¦¬ì— í¬í•¨ëœ anthocyanin(ì•ˆí† ì‹œì•„ë‹Œ)ì€ ëˆˆí”¼ë¡œì— íš¨ê³¼ê°€ ìžˆë‹¤."
+  },
+  {
+    "id": "4",
+    "name": "ì²´ë¦¬",
+    "price": " 5000",
+    "description": "ì²´ë¦¬ëŠ” ë§›ì´ ë‹¨ ì„±ë¶„ì´ ë§Žê³  í”¼ë¡œíšŒë³µì— ìž˜ ë“£ëŠ”ë‹¤."
+  },
+  {
+    "id": "5",
+    "name": "ë©”ë¡ ",
+    "price": " 5000",
+    "description": "ë©”ë¡ ì—ëŠ” ë¹„íƒ€ë¯¼Aì™€ ì¹¼ë¥¨ì´ ë§Žì´ í¬í•¨ë˜ì–´ ìžˆë‹¤."
+  },
+  {
+    "id": "6",
+    "name": "ìˆ˜ë°•",
+    "price": "15000",
+    "description": "ìˆ˜ë¶„ì´ í’ë¶€í•œ ê³¼ì¼ì´ë‹¤."
+  }
+]
