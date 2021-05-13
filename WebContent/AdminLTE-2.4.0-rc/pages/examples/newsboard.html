@@ -30,96 +30,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"
     />
-    <style type="text/css">
-      /*기본 세팅*/
-      * {
-        margin: 0;
-        padding: 0;
-      }
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" />
 
-      .content li {
-        list-style: none;
-      }
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
-      body .content {
-        font: 12px Margun Gothic, "맑은고딕", gulim, "굴림", sans-serif;
-        color: #333;
-        padding-top: 20px;
-      }
-
-      .content h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-size: 100%;
-        font-weight: normal;
-      }
-
-      .content a {
-        color: #333;
-        text-decoration: none;
-        outline: none;
-      }
-
-      .content-header h1 {
-        font-size: 2em;
-        margin-bottom: 10px;
-        color: #c00;
-      }
-      /*탭 메뉴 디자인*/
-      #news_wrap {
-        width: 380px;
-        margin: 0 auto;
-        background: #fff url("../../dist/img/images/rss_bg.gif") 0 20px repeat-x;
-      }
-
-      #news_wrap li {
-        height: 25px;
-        line-height: 25px;
-        position: relative;
-      }
-
-      #news_wrap span {
-        position: absolute;
-        top: 0;
-        right: 3px;
-      }
-
-      #news_wrap li a {
-        display: block;
-        width: 210px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        padding-left: 15px;
-        background: url("../../dist/img/images/bullet.gif") 5px 10px no-repeat;
-      }
-
-      #news_wrap h2 {
-        float: left;
-        padding-right: 3px;
-        margin-bottom: 10px;
-      }
-
-      #news_list {
-        clear: both;
-      }
-      /*비활성화 탭 버튼 모양*/
-      #news_wrap h2 a {
-        display: inline-block;
-        padding: 8px 10px;
-        border: 1px solid #aaa;
-        border-bottom: none;
-        border-radius: 5px 5px 0 0;
-        background: #ccc;
-      }
-      /*비활성화 탭 버튼 모양*/
-      #news_wrap h2 a.on {
-        background-color: #fff;
-        font-weight: bold;
-        padding: 8px 20.5px;
+    <script type="text/javascript" language="javascript" src="../../dist/js/pages/jquery.dataTables.min.js"></script>
+    <style>
+      .news_board_img {
+        height: 50px;
       }
     </style>
   </head>
@@ -138,8 +56,10 @@
         <nav class="navbar navbar-static-top">
           <!-- Sidebar toggle button-->
           <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
-            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </a>
 
           <div class="navbar-custom-menu">
@@ -147,7 +67,8 @@
               <!-- Messages: style can be found in dropdown.less-->
               <li class="dropdown messages-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-envelope-o"></i> <span class="label label-success">4</span>
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="label label-success">4</span>
                 </a>
                 <ul class="dropdown-menu">
                   <li class="header">You have 4 messages</li>
@@ -161,7 +82,8 @@
                             <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                           </div>
                           <h4>
-                            Support Team <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                            Support Team
+                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
                           </h4>
                           <p>Why not buy a new awesome theme?</p>
                         </a>
@@ -175,7 +97,8 @@
               <!-- Notifications: style can be found in dropdown.less -->
               <li class="dropdown notifications-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-bell-o"></i> <span class="label label-warning">10</span>
+                  <i class="fa fa-bell-o"></i>
+                  <span class="label label-warning">10</span>
                 </a>
                 <ul class="dropdown-menu">
                   <li class="header">You have 10 notifications</li>
@@ -183,10 +106,7 @@
                     <!-- inner menu: contains the actual data -->
                     <ul class="menu">
                       <li>
-                        <a href="#">
-                          <i class="fa fa-users text-aqua"></i>
-                          5 new members joined today
-                        </a>
+                        <a href="#"> <i class="fa fa-users text-aqua"></i> 5 new members joined today </a>
                       </li>
                     </ul>
                   </li>
@@ -196,7 +116,8 @@
               <!-- Tasks: style can be found in dropdown.less -->
               <li class="dropdown tasks-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-flag-o"></i> <span class="label label-danger">9</span>
+                  <i class="fa fa-flag-o"></i>
+                  <span class="label label-danger">9</span>
                 </a>
                 <ul class="dropdown-menu">
                   <li class="header">You have 9 tasks</li>
@@ -206,7 +127,10 @@
                       <li>
                         <!-- Task item -->
                         <a href="#">
-                          <h3>Design some buttons <small class="pull-right">20%</small></h3>
+                          <h3>
+                            Design some buttons
+                            <small class="pull-right">20%</small>
+                          </h3>
                           <div class="progress xs">
                             <div
                               class="progress-bar progress-bar-aqua"
@@ -224,7 +148,9 @@
                       <!-- end task item -->
                     </ul>
                   </li>
-                  <li class="footer"><a href="#">View all tasks</a></li>
+                  <li class="footer">
+                    <a href="#">View all tasks</a>
+                  </li>
                 </ul>
               </li>
               <!-- User Account: style can be found in dropdown.less -->
@@ -238,7 +164,10 @@
                   <li class="user-header">
                     <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
 
-                    <p>Alexander Pierce - Web Developer <small>Member since Nov. 2012</small></p>
+                    <p>
+                      Alexander Pierce - Web Developer
+                      <small>Member since Nov. 2012</small>
+                    </p>
                   </li>
                   <!-- Menu Body -->
                   <li class="user-body">
@@ -309,7 +238,9 @@
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-                <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
               </a>
               <ul class="treeview-menu">
                 <li>
@@ -322,7 +253,8 @@
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-files-o"></i> <span>Layout Options</span>
+                <i class="fa fa-files-o"></i>
+                <span>Layout Options</span>
                 <span class="pull-right-container">
                   <span class="label label-primary pull-right">4</span>
                 </span>
@@ -345,13 +277,18 @@
             <li>
               <a href="../widgets.html">
                 <i class="fa fa-th"></i> <span>Widgets</span>
-                <span class="pull-right-container"> <small class="label pull-right bg-green">Hot</small> </span>
+                <span class="pull-right-container">
+                  <small class="label pull-right bg-green">Hot</small>
+                </span>
               </a>
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-pie-chart"></i> <span>Charts</span>
-                <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span>
+                <i class="fa fa-pie-chart"></i>
+                <span>Charts</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
               </a>
               <ul class="treeview-menu">
                 <li>
@@ -370,7 +307,8 @@
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-laptop"></i> <span>UI Elements</span>
+                <i class="fa fa-laptop"></i>
+                <span>UI Elements</span>
                 <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                 </span>
@@ -399,7 +337,9 @@
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-edit"></i> <span>Forms</span>
-                <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
               </a>
               <ul class="treeview-menu">
                 <li>
@@ -416,7 +356,9 @@
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-table"></i> <span>Tables</span>
-                <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
               </a>
               <ul class="treeview-menu">
                 <li>
@@ -431,7 +373,8 @@
               <a href="../calendar.html">
                 <i class="fa fa-calendar"></i> <span>Calendar</span>
                 <span class="pull-right-container">
-                  <small class="label pull-right bg-red">3</small> <small class="label pull-right bg-blue">17</small>
+                  <small class="label pull-right bg-red">3</small>
+                  <small class="label pull-right bg-blue">17</small>
                 </span>
               </a>
             </li>
@@ -440,24 +383,30 @@
                 <i class="fa fa-envelope"></i> <span>Mailbox</span>
                 <span class="pull-right-container">
                   <small class="label pull-right bg-yellow">12</small>
-                  <small class="label pull-right bg-green">16</small> <small class="label pull-right bg-red">5</small>
+                  <small class="label pull-right bg-green">16</small>
+                  <small class="label pull-right bg-red">5</small>
                 </span>
               </a>
             </li>
             <li class="treeview active">
               <a href="#">
                 <i class="fa fa-folder"></i> <span>Examples</span>
-                <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
               </a>
               <ul class="treeview-menu">
                 <li>
                   <a href="gallery.html"><i class="fa fa-circle-o"></i> 갤러리</a>
                 </li>
-                <li class="active">
+                <li>
                   <a href="news.html"><i class="fa fa-circle-o"></i> 연합뉴스</a>
                 </li>
                 <li>
                   <a href="normalboard.html"><i class="fa fa-circle-o"></i> 일반게시판</a>
+                </li>
+                <li class="active">
+                  <a href="newsboard.html"><i class="fa fa-circle-o"></i> 연합뉴스게시판</a>
                 </li>
                 <li>
                   <a href="invoice.html"><i class="fa fa-circle-o"></i> Invoice</a>
@@ -502,7 +451,9 @@
                 <li class="treeview">
                   <a href="#"
                     ><i class="fa fa-circle-o"></i> Level One
-                    <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
                   </a>
                   <ul class="treeview-menu">
                     <li>
@@ -511,7 +462,9 @@
                     <li class="treeview">
                       <a href="#"
                         ><i class="fa fa-circle-o"></i> Level Two
-                        <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span>
+                        <span class="pull-right-container">
+                          <i class="fa fa-angle-left pull-right"></i>
+                        </span>
                       </a>
                       <ul class="treeview-menu">
                         <li>
@@ -553,13 +506,16 @@
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-          <h1>연합뉴스 <small>새로운 시대에 걸맞은 다양한 뉴스</small></h1>
+          <h1>
+            Blank page
+            <small>it all starts here</small>
+          </h1>
           <ol class="breadcrumb">
             <li>
               <a href="#"><i class="fa fa-dashboard"></i> Home</a>
             </li>
             <li><a href="#">Examples</a></li>
-            <li class="active">연합뉴스</li>
+            <li class="active">Blank page</li>
           </ol>
         </section>
 
@@ -568,7 +524,7 @@
           <!-- Default box -->
           <div class="box">
             <div class="box-header with-border">
-              <h3 class="box-title">뉴스 모음</h3>
+              <h3 class="box-title">Title</h3>
 
               <div class="box-tools pull-right">
                 <button
@@ -592,32 +548,22 @@
               </div>
             </div>
             <div class="box-body">
-              <div id="news_wrap">
-                <h2>
-                  <!-- 초기에 첫 번째 버튼에만 class="on"이 포함되어 있습니다. -->
-                  <a href="http://www.yonhapnewstv.co.kr/category/news/headline/feed/" class="on"> 헤드라인</a>
-                </h2>
-
-                <h2>
-                  <a href="http://www.yonhapnewstv.co.kr/category/news/economy/feed/">경제</a>
-                </h2>
-                <h2>
-                  <a href="http://www.yonhapnewstv.co.kr/category/news/society/feed/">사회</a>
-                </h2>
-                <h2>
-                  <a href="http://www.yonhapnewstv.co.kr/category/news/international/feed/">세계</a>
-                </h2>
-                <h2>
-                  <a href="http://www.yonhapnewstv.co.kr/category/news/culture/feed/">문화/연예</a>
-                </h2>
-                <h2>
-                  <a href="http://www.yonhapnewstv.co.kr/category/news/sports/feed/">스포츠</a>
-                </h2>
-                <ul id="news_list"></ul>
-              </div>
+              <table id="example" class="display" cellspacing="0" width="100%">
+                <thead>
+                  <tr>
+                    <th>분류</th>
+                    <th></th>
+                    <th>제목</th>
+                    <th>날짜</th>
+                  </tr>
+                </thead>
+                <tfoot>
+                  <hr />
+                </tfoot>
+              </table>
             </div>
             <!-- /.box-body -->
-            <div class="box-footer">저작권자(c) 연합뉴스(https://www.yna.co.kr/), 무단 전재-재배포 금지</div>
+            <div class="box-footer">Footer</div>
             <!-- /.box-footer-->
           </div>
           <!-- /.box -->
@@ -628,7 +574,7 @@
 
       <footer class="main-footer">
         <div class="pull-right hidden-xs"><b>Version</b> 2.4.0</div>
-        <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>. </strong> All rights
+        <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
         reserved.
       </footer>
 
@@ -702,7 +648,8 @@
               <li>
                 <a href="javascript:void(0)">
                   <h4 class="control-sidebar-subheading">
-                    Custom Template Design <span class="label label-danger pull-right">70%</span>
+                    Custom Template Design
+                    <span class="label label-danger pull-right">70%</span>
                   </h4>
 
                   <div class="progress progress-xxs">
@@ -713,7 +660,8 @@
               <li>
                 <a href="javascript:void(0)">
                   <h4 class="control-sidebar-subheading">
-                    Update Resume <span class="label label-success pull-right">95%</span>
+                    Update Resume
+                    <span class="label label-success pull-right">95%</span>
                   </h4>
 
                   <div class="progress progress-xxs">
@@ -724,7 +672,8 @@
               <li>
                 <a href="javascript:void(0)">
                   <h4 class="control-sidebar-subheading">
-                    Laravel Integration <span class="label label-warning pull-right">50%</span>
+                    Laravel Integration
+                    <span class="label label-warning pull-right">50%</span>
                   </h4>
 
                   <div class="progress progress-xxs">
@@ -735,7 +684,8 @@
               <li>
                 <a href="javascript:void(0)">
                   <h4 class="control-sidebar-subheading">
-                    Back End Framework <span class="label label-primary pull-right">68%</span>
+                    Back End Framework
+                    <span class="label label-primary pull-right">68%</span>
                   </h4>
 
                   <div class="progress progress-xxs">
@@ -757,7 +707,8 @@
 
               <div class="form-group">
                 <label class="control-sidebar-subheading">
-                  Report panel usage <input type="checkbox" class="pull-right" checked />
+                  Report panel usage
+                  <input type="checkbox" class="pull-right" checked />
                 </label>
 
                 <p>Some information about this general settings option</p>
@@ -766,7 +717,8 @@
 
               <div class="form-group">
                 <label class="control-sidebar-subheading">
-                  Allow mail redirect <input type="checkbox" class="pull-right" checked />
+                  Allow mail redirect
+                  <input type="checkbox" class="pull-right" checked />
                 </label>
 
                 <p>Other sets of options are available</p>
@@ -775,7 +727,8 @@
 
               <div class="form-group">
                 <label class="control-sidebar-subheading">
-                  Expose author name in posts <input type="checkbox" class="pull-right" checked />
+                  Expose author name in posts
+                  <input type="checkbox" class="pull-right" checked />
                 </label>
 
                 <p>Allow the user to show his name in blog posts</p>
@@ -786,14 +739,16 @@
 
               <div class="form-group">
                 <label class="control-sidebar-subheading">
-                  Show me as online <input type="checkbox" class="pull-right" checked />
+                  Show me as online
+                  <input type="checkbox" class="pull-right" checked />
                 </label>
               </div>
               <!-- /.form-group -->
 
               <div class="form-group">
                 <label class="control-sidebar-subheading">
-                  Turn off notifications <input type="checkbox" class="pull-right" />
+                  Turn off notifications
+                  <input type="checkbox" class="pull-right" />
                 </label>
               </div>
               <!-- /.form-group -->
@@ -818,7 +773,7 @@
     <!-- ./wrapper -->
 
     <!-- jQuery 3 -->
-    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="../../bower_components/jquery/dist/jquery.min.js"></script> -->
     <!-- Bootstrap 3.3.7 -->
     <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- SlimScroll -->
@@ -833,35 +788,62 @@
       $(document).ready(function () {
         $(".sidebar-menu").tree();
       });
-
-      $(function () {
-        var g = "https://api.rss2json.com/v1/api.json?rss_url=";
-
-        $("#news_wrap h2 a").on("click", function (e) {
-          e.preventDefault();
-          $("#news_wrap h2 a").removeClass("on");
-          $(this).addClass("on");
-          $.ajax({
-            url: g + $(this).attr("href"),
-            dataType: "json",
-            success: function (data) {
-              $("#news_list").empty();
-
-              $.each(data.items, function (i, d) {
-                if (i == 10) return false;
-                var title = d["title"];
-                var date = new Date(d["pubDate"]);
-                var m = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
-                var lk = d["link"];
-                $("#news_list").append(
-                  '<li><a href="' + lk + '" target="_blank">' + title + "</a> <span>" + m + "</span></li>"
-                );
-              });
+    </script>
+    <script type="text/javascript" class="init">
+      $(document).ready(function () {
+        $("#example").DataTable({
+          language: {
+            sEmptyTable: "데이터가 없습니다",
+            sInfo: "_START_ - _END_ / _TOTAL_",
+            sInfoEmpty: "0 - 0 / 0",
+            sInfoFiltered: "(총 _MAX_ 개)",
+            sInfoPostFix: "",
+            sInfoThousands: ",",
+            sLengthMenu: "페이지당 줄수 _MENU_",
+            sLoadingRecords: "읽는중...",
+            sProcessing: "처리중...",
+            sSearch: "검색:",
+            sZeroRecords: "검색 결과가 없습니다",
+            oPaginate: {
+              sFirst: "처음",
+              sLast: "마지막",
+              sNext: "다음",
+              sPrevious: "이전",
             },
-          });
+          },
+          oAria: {
+            sSortAscending: ": 오름차순 정렬",
+            sSortDescending: ": 내림차순 정렬",
+          },
+          ajax: {
+            url: "https://api.rss2json.com/v1/api.json?rss_url=https://it.donga.com/feeds/rss/news/&api_key=bp7sg8suvd1tlbxzjhbgsl0w957qt0fxtodbkhhz&count=200",
+            dataSrc: "items",
+          },
+          columns: [
+            { data: "categories" },
+            {
+              data: "thumbnail",
+              render: function (data, type, row) {
+                return "<img src='" + row["thumbnail"] + "' class='news_board_img'/>";
+              },
+            },
+            {
+              data: "title",
+              render: function (data, type, row) {
+                return '<a href="' + row["link"] + '">' + row["title"] + "</a>";
+              },
+            },
+            {
+              data: "pubDate",
+              render: function (data, type, row) {
+                var date = new Date(row["pubDate"]);
+                data = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+                return data;
+              },
+            },
+          ],
         });
-        $("#news_wrap h2 a").eq(0).click();
-      });
+      }); // end of $(document).ready(function()
     </script>
   </body>
 </html>
